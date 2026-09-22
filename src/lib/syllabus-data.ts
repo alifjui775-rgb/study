@@ -1,0 +1,137 @@
+export const syllabusData = [
+  {
+    subject: "পদার্থবিজ্ঞান (Physics)",
+    papers: [
+      {
+        paper: "পদার্থবিজ্ঞান ১ম পত্র (Physics 1st Paper)",
+        chapters: [
+          "Physical World and Measurement (ভৌত জগৎ ও পরিমাপ)",
+          "Vectors (ভেক্টর)",
+          "Dynamics (গতিবিদ্যা)",
+          "Newtonian Mechanics (নিউটনিয়ান বলবিদ্যা)",
+          "Work, Energy & Power (কাজ, শক্তি ও ক্ষমতা)",
+          "Gravitation and Gravity (মহাকর্ষ ও অভিকর্ষ)",
+          "Structural Properties of Matter (পদার্থের গাঠনিক ধর্ম)",
+          "Periodic Motion (পর্যাবৃত্ত গতি)",
+          "Wave (তরঙ্গ)",
+          "Ideal Gas and Kinetic Theory of Gases (আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব)",
+        ],
+      },
+      {
+        paper: "পদার্থবিজ্ঞান ২য় পত্র (Physics 2nd Paper)",
+        chapters: [
+          "Thermodynamics (তাপগত­বিদ্যা)",
+          "Static Electricity (স্থির তড়িৎ)",
+          "Current Electricity (চল তড়িৎ)",
+          "Magnetic Effects of Electric Current and Magnetism (তড়িৎ প্রবাহের চৌম্বক ক্রিয়া ও চৌম্বকত্ব)",
+          "Electromagnetic Induction and Alternating Current (তড়িতচৌম্বকীয়­ আবশ ও পরিবর্তী প্রবাহ)",
+          "Geometrical Optics (জ্যামিতিক আলোকবিজ্ঞান)",
+          "Physical Optics (ভৌত আলোকবিজ্ঞান)",
+          "Introduction to Modern Physics (আধুনিক পদার্থবিজ্ঞান)",
+          "Atomic Model and Nuclear Physics (পরমাণুর মডেল এবং নিউক্লিয়ার পদার্থবিজ্ঞান)",
+          "Semiconductor and Electronics (সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স)",
+          "Astronomy (জ্যোতির্বিজ্ঞান)",
+        ],
+      },
+    ],
+  },
+  {
+    subject: "রসায়ন (Chemistry)",
+    papers: [
+      {
+        paper: "রসায়ন ১ম পত্র (Chemistry 1st Paper)",
+        chapters: [
+          "Safe use of Laboratory (ল্যাবরেটরির নিরাপদ ব্যাবহার)",
+          "Qualitative Chemistry (গুণগত রসায়ন)",
+          "Perhodic Properties of Elements & Chemical Bonding (মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন)",
+          "Chemical Changes (রাসায়নিক পরিবর্তন)",
+          "Application Oriented Chemistry (কর্মমুখী রসায়ন)",
+        ],
+      },
+      {
+        paper: "রসায়ন ২য় পত্র (Chemistry 2nd Paper)",
+        chapters: [
+          "Environmental Chemistry (পরিবেশ রসায়ন)",
+          "Organic Chemistry (জৈব রসায়ন)",
+          "Quantitive Chemistry (পরিমাণগত রসায়ন)",
+          "Electro Chemistry (তড়িৎ রসায়ন)",
+          "Economical Chemistry (অর্থনৈতিক রসায়ন)",
+        ],
+      },
+    ],
+  },
+  {
+    subject: "জীববিজ্ঞান (Biology)",
+    papers: [
+      {
+        paper: "জীববিজ্ঞান ১ম পত্র (Biology 1st Paper)",
+        chapters: [
+          "Cell and Its Structure (কোষ ও এর গঠন)",
+          "Cell Division (কোষ বিভাজন)",
+          "Cell Chemistry (কোষ রসায়ন)",
+          "Micro-organism/Microbe (অনুজীব)",
+          "Algae and Fungi (শৈবাল ও ছত্রাক)",
+          "Bryophyta and Pteridophya (ব্রায়োফাইট ও টেরিডোফাইটা)",
+          "Gymnosperms and Angiosperms (নগ্নবীজী ও আবৃতবীজী উদ্ভিদ)",
+          "Tissue and Tissue System (টিস্যু ও টিস্যুতন্ত্র)",
+          "Plant Physiology (উদ্ভিদ শারীরতত্ত্ব)",
+          "Plant Peproduction (উদ্ভিদ প্রজনন)",
+          "Biotechnology (জীবপ্রযুক্তি)",
+          "Environment, Distribution and Conservation of Living Organisms (জীবের পরিবেশ, বিস্তার ও সংরক্ষণ)",
+        ],
+      },
+      {
+        paper: "জীববিজ্ঞান ২য় পত্র (Biology 2nd Paper)",
+        chapters: [
+          "Animal Diversity & Classification (প্রাণীর বিভিন্নতা ও শ্রেণিবিন্যাস)",
+          "Introduction to Animal (প্রাণীর পরিচিতি)",
+          "Human Physiology : Digestion & Absorption (মানব শরীরতত্ত্ব : পরিপাক ও শোষণ)",
+          "Human Physiology : Blood & Circulation (মানব শরীরতত্ত্ব : রক্ত ও সংবহনতন্ত্র)",
+          "Human Physiology : Respiration & its Process (মানব শরীরতত্ত্ব : শ্বসন ও শ্বাসক্রিয়া)",
+          "Human Physiology : Waste & Excretion (মানব শরীরতত্ত্ব : বর্জ্য ও নিষ্কাশন)",
+          "Human Physiology : Locomotion & Organ Movement (মানব শরীরতত্ত্ব : চলন ও অঙ্গচালনা)",
+          "Human Physiology : Co-ordination & Control (মানব শরীরতত্ত্ব : সমন্বয় ও নিয়ন্ত্রন)",
+          "Continuity of Human Life (মানব জীবনের ধারাবাহিকতা)",
+          "Immunity of Human Body (মানবদেহের প্রতিরক্ষা)",
+          "Genetics & Evolution (জীনতত্ত্ব ও বিবর্তন)",
+          "Animal Behaviour (প্রাণীর আচরণ)",
+        ],
+      },
+    ],
+  },
+  {
+    subject: "উচ্চতর গণিত (Higher Math)",
+    papers: [
+      {
+        paper: "উচ্চতর গণিত ১ম পত্র (Math 1st Paper)",
+        chapters: [
+          "Matrix & Diterminations (ম্যাট্রিক্স ও নির্ণায়ক)",
+          "Vectors (ভেক্টর)",
+          "Straight Line (সরলরেখা)",
+          "Circles (বৃত্ত)",
+          "Permutations & Combinations (বিন্যাস ও সমাবেশ)",
+          "Trigonometric Ratios (ত্রিকোণমিতিক অনুপাত)",
+          "Trigonometric Ratios of Associated Angles (সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত)",
+          "Functions & Graph of Functions (ফাংশন ও ফাংশনের লেখচিত্র)",
+          "Differentiation (অন্তরীকরণ)",
+          "Integration (যোগজীকরণ)",
+        ],
+      },
+      {
+        paper: "উচ্চতর গণিত ২য় পত্র (Math 2nd Paper)",
+        chapters: [
+          "Real Number & Inequalities (বাস্তব সংখ্যা ও অসমতা)",
+          "Linear Programming (যোগাশ্রয়ী প্রোগ্রাম)",
+          "Complex Number (জঠিল সংখ্যা)",
+          "Polynoials & Polynomial Equations (বহুপদী ও বহুপদী সমীকরণ)",
+          "Binomial Expansions (দ্বিপদী বিস্তৃতি)",
+          "Conics (কনিক)",
+          "Inverse Trigonometric Functions & Trigonometric Equations (বিপরীত ত্রিকোণমিতিক ফাংশন ও ত্রিকোণমিতিক সমীকরণ)",
+          "Statics (স্থিতিবিদ্যা)",
+          "Motion of Particles in a Plane (সমতলে বস্তুকণার গতি)",
+          "Measures of Dispersions & Probability (বিস্তার পরিমাপ ও সম্ভাবনা)",
+        ],
+      },
+    ],
+  },
+];

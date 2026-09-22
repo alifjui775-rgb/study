@@ -1,0 +1,74 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+.pnpm-home/
+.pnpm-store/
+
+# ===========================
+# Build output
+# ===========================
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# ===========================
+# Environment variables
+# ===========================
+
+
+# ===========================
+# Logs
+# ===========================
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===========================
+# Editor / IDE
+# ===========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ===========================
+# OS generated
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ===========================
+# Vite / TypeScript
+# ===========================
+*.local
+tsconfig.tsbuildinfo
+
+# ===========================
+# Graphify (generated output)
+# ===========================
+graphify-out/
+
+# ===========================
+# OpenCode (AI tool config - optional)
+# ===========================
+.opencode/
+
+# ===========================
+# Supabase local dev
+# ===========================
+supabase/.branches/
+supabase/.temp/

@@ -1,0 +1,390 @@
+@import "tailwindcss";
+
+@plugin "tailwind-scrollbar-hide";
+@plugin "@tailwindcss/typography";
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility scrollbar-default {
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
+  &::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@utility font-bengali {
+  font-family: "Solaiman Lipi", sans-serif;
+}
+
+@utility font-heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.font-bengali {
+  font-family: "Solaiman Lipi", sans-serif;
+}
+
+.font-heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --spacing-0\.25: 0.0625rem;
+  --font-sans: "Solaiman Lipi", sans-serif;
+  --font-bengali: "Solaiman Lipi", sans-serif;
+  --font-heading: "Josefin Sans", sans-serif;
+  --font-mono: monospace;
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-shift: var(--color-primary);
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-success: hsl(var(--success));
+  --color-success-foreground: hsl(var(--success-foreground));
+
+  --color-warning: hsl(var(--warning));
+  --color-warning-foreground: hsl(var(--warning-foreground));
+
+  --color-info: hsl(var(--info));
+  --color-info-foreground: hsl(var(--info-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Custom Colors (from tailwind.config.ts) */
+  --color-progress-yellow: #fbbf24;
+  --color-progress-light-green: #86efac;
+  --color-progress-green: #22c55e;
+
+  /* Custom Keyframes (from tailwind.config.ts) */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  --animate-float: float 6s ease-in-out infinite;
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: hsl(var(--primary));
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-linear-to-r from-primary to-primary-shift bg-clip-text text-transparent;
+  }
+  .gradient-background {
+    background: linear-gradient(to right, hsl(223 56% 39%), #3b82f6);
+    color: #f8fafc;
+  }
+  :is(.dark *) .gradient-background {
+    background: linear-gradient(to right, hsl(130 66% 38%), #60a5fa);
+    color: #f8fafc;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out both;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Solaiman Lipi (local WOFF2) ──────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Solaiman Lipi";
+  src: url("/fonts/solaiman-lipi-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Solaiman Lipi";
+  src: url("/fonts/solaiman-lipi-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Solaiman Lipi";
+  src: url("/fonts/solaiman-lipi-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Josefin Sans (local WOFF2) ──────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/fonts/josefin-sans-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 140 67% 99%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 140 65% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 140 65% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 240 10% 3.9%;
+    --info: 140 65% 40%;
+    --info-foreground: 0 0% 100%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 140 65% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 5.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 8.2%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8.2%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 140 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 140 65% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 240 10% 3.9%;
+    --info: 140 65% 45%;
+    --info-foreground: 0 0% 100%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 140 65% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.qimg {
+  width: 100%;
+  max-width: min(400px, 100%);
+}
+
+/* ==========================================
+   Notification Bar Banner Styles
+   ========================================== */
+
+.ntfC {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #b8ecd7 0%, #d4f1d4 100%);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #1f4d0f;
+  padding: 10px 15px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.dark .ntfC {
+  background: #0a2a0a;
+  color: #a3e9a4;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ntfC::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.15);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  opacity: 0.1;
+}
+
+.ntfT {
+  width: 100%;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.ntfT a {
+  font-weight: 700;
+}
+
+.ntfA {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: initial;
+}
+
+.ntfA > a {
+  background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(76, 175, 80, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  margin-left: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ntfA > a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(76, 175, 80, 0.5);
+}
+
+.ntfC .c {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.ntfC .c:hover {
+  opacity: 1;
+}
