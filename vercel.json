@@ -1,0 +1,10 @@
+{
+  "installCommand": "pnpm install --ignore-scripts --no-frozen-lockfile && pnpm rebuild esbuild sharp core-js",
+  "buildCommand": "pnpm build",
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
