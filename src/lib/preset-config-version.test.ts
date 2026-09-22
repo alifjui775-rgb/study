@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi } from "vite-plus/test";
 import { DEFAULT_PRESETS } from "./chapter-task-presets";
 
 type Store = typeof import("./chapter-task-store");
@@ -262,7 +262,7 @@ describe("preset-config version semantics", () => {
     store.getChapterSelectionsCached("x");
     expect(store.getVisiblePresetsConfigVersion()).toBe(v0);
 
-    store.setActivePresetIds([...DEFAULT_PRESETS.map((p) => p.id)]);
+    store.setActivePresetIds(DEFAULT_PRESETS.map((p) => p.id));
     const v1 = store.getVisiblePresetsConfigVersion();
     expect(v1).toBeGreaterThan(v0);
 

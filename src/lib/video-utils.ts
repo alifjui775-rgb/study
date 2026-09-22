@@ -19,7 +19,7 @@ export function parseVideoSource(url: string | null | undefined): VideoSource {
 
     // 2. Check for single YouTube Video (Handles youtu.be, watch?v=, embed/, shorts/)
     const ytRegex =
-      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
+      /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/i;
     const match = trimmed.match(ytRegex);
 
     if (match && match[1]) {

@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect } from "vite-plus/test";
 import { resolveSelectedUnit, type SelectableUnit } from "./unit-selection";
 
 type Unit = SelectableUnit;
