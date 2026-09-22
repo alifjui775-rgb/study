@@ -1,0 +1,55 @@
+{
+  "allGroups": [
+    {
+      "title": "বাংলা",
+      "subtitle": "১ম ও ২য় পত্র একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/Bangla.png",
+      "href": "https://t.me/PDFHour/11373",
+      "bgColor": "bg-red-400"
+    },
+    {
+      "title": "ইংরেজী",
+      "subtitle": "১ম ও ২য় পত্র একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/English.png",
+      "href": "https://t.me/PDFHour/11374",
+      "bgColor": "bg-blue-400"
+    },
+    {
+      "title": "তথ্য ও যোগাযোগ প্রযুক্তি",
+      "subtitle": "সম্পূর্ণ একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/ICT.png",
+      "href": "https://t.me/PDFHour/11375",
+      "bgColor": "bg-green-400"
+    }
+  ],
+  "scienceGroup": [
+    {
+      "title": "পদার্থবিজ্ঞান",
+      "subtitle": "১ম ও ২য় পত্র একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/Physics.png",
+      "href": "https://t.me/PDFHour/11376",
+      "bgColor": "bg-indigo-400"
+    },
+    {
+      "title": "রসায়ন",
+      "subtitle": "১ম ও ২য় পত্র একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/Chemistry.png",
+      "href": "https://t.me/PDFHour/11377",
+      "bgColor": "bg-purple-400"
+    },
+    {
+      "title": "জীববিজ্ঞান",
+      "subtitle": "১ম ও ২য় পত্র একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/Biology.png",
+      "href": "https://t.me/PDFHour/11379",
+      "bgColor": "bg-teal-400"
+    },
+    {
+      "title": "উচ্চতর গণিত",
+      "subtitle": "১ম ও ২য় পত্র একত্রে",
+      "logo": "https://raw.githubusercontent.com/MNRfrom2020/logo-and-icon-cdn/refs/heads/main/Icon/Math.png",
+      "href": "https://t.me/PDFHour/11378",
+      "bgColor": "bg-orange-400"
+    }
+  ]
+}
