@@ -16,10 +16,6 @@ build/
 # ===========================
 # Environment variables
 # ===========================
-.env
-.env.*
-!.env.example
-*.local
 
 
 # ===========================
@@ -58,7 +54,6 @@ ehthumbs.db
 # ===========================
 # Vite / TypeScript
 # ===========================
-*.local
 tsconfig.tsbuildinfo
 
 # ===========================
@@ -76,3 +71,4 @@ graphify-out/
 # ===========================
 supabase/.branches/
 supabase/.temp/
+.vercel
